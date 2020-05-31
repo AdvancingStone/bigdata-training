@@ -6,7 +6,7 @@ import java.util.Properties
 import org.apache.kafka.clients.consumer.{ConsumerConfig, ConsumerRecord, ConsumerRecords, KafkaConsumer}
 import org.apache.kafka.common.serialization.StringDeserializer
 
-object KafkaConsumerSubscribeScala2 {
+object KafkaConsumerSubscribeScala {
   def main(args: Array[String]): Unit = {
     val props = new Properties()
     props.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "master:9092,slave1:9092.slave2:9092")
