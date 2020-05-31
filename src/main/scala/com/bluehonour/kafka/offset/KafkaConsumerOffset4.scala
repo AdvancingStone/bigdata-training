@@ -17,9 +17,10 @@ object KafkaConsumerOffset4 {
     //如果系统没有消费者得到偏移量，系统会读取该分区最早的偏移量
     props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest")
     //配置offset自动提交的时间
-    props.put(ConsumerConfig.AUTO_COMMIT_INTERVAL_MS_CONFIG, new Integer(10000))
+    props.put(ConsumerConfig.AUTO_COMMIT_INTERVAL_MS_CONFIG, "10000")
     //offset偏移量自动提交，默认是true
-    props.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, boolean2Boolean(true))
+//    props.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, boolean2Boolean(true))
+    props.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, "true")
 
     val consumer = new KafkaConsumer[String, String](props)
     consumer.subscribe(util.Arrays.asList("test2"))
