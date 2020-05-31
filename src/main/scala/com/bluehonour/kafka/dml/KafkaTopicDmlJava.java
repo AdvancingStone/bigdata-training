@@ -5,7 +5,6 @@ import org.apache.kafka.clients.admin.*;
 import java.util.Arrays;
 import java.util.Map;
 import java.util.Properties;
-import java.util.Set;
 import java.util.concurrent.ExecutionException;
 
 public class KafkaTopicDmlJava {
@@ -16,22 +15,22 @@ public class KafkaTopicDmlJava {
         AdminClient adminClient = KafkaAdminClient.create(props);
 
         //创建topic信息,默认是异步创建
-        CreateTopicsResult createTopicsResult = adminClient.createTopics(Arrays.asList(new NewTopic("topic2", 3, (short) 3)));
-        createTopicsResult.all().get(); //同步创建
+//        CreateTopicsResult createTopicsResult = adminClient.createTopics(Arrays.asList(new NewTopic("topic2", 3, (short) 3)));
+//        createTopicsResult.all().get(); //同步创建
 
         //删除topic,默认是异步删除
-        DeleteTopicsResult deleteTopicsResult = adminClient.deleteTopics(Arrays.asList( "topic2"));
-        deleteTopicsResult.all().get();  //同步删除
+//        DeleteTopicsResult deleteTopicsResult = adminClient.deleteTopics(Arrays.asList( "topic2"));
+//        deleteTopicsResult.all().get();  //同步删除
 
         //查看topic列表
-        ListTopicsResult topicResult = adminClient.listTopics();
-        Set<String> names = topicResult.names().get();
-        for (String name : names) {
-            System.out.println(name);
-        }
+//        ListTopicsResult topicResult = adminClient.listTopics();
+//        Set<String> names = topicResult.names().get();
+//        for (String name : names) {
+//            System.out.println(name);
+//        }
 
         //查看topic的详细信息
-        DescribeTopicsResult describeTopicsResult = adminClient.describeTopics(Arrays.asList("flink-kafka"));
+        DescribeTopicsResult describeTopicsResult = adminClient.describeTopics(Arrays.asList("test2"));
         Map<String, TopicDescription> topicDescriptionMap = describeTopicsResult.all().get();
         for (Map.Entry<String, TopicDescription> entry : topicDescriptionMap.entrySet()) {
             System.out.println(entry.getKey() + "\t" + entry.getValue());
