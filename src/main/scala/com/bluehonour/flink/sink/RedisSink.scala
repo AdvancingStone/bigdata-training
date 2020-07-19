@@ -1,9 +1,12 @@
 package com.bluehonour.flink.sink
 
+import java.net.InetSocketAddress
+import java.util
+
 import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
 import org.apache.flink.streaming.api.scala._
 import org.apache.flink.streaming.connectors.redis.RedisSink
-import org.apache.flink.streaming.connectors.redis.common.config.FlinkJedisPoolConfig
+import org.apache.flink.streaming.connectors.redis.common.config.{FlinkJedisClusterConfig, FlinkJedisPoolConfig}
 import org.apache.flink.streaming.connectors.redis.common.mapper.{RedisCommand, RedisCommandDescription, RedisMapper}
 
 object RedisSink {
@@ -15,7 +18,13 @@ object RedisSink {
       .keyBy(0)
       .sum(1)
     //若redis是单机
-    val config = new FlinkJedisPoolConfig.Builder().setHost("master").setDatabase(2).setPassword("liushuai").setPort(6379).build()
+    val config = new FlinkJedisPoolConfig.Builder().setHost("master").setDatabase(2).setPassword("xxx").setPort(6379).build()
+    //如果redis是集群
+//    val addresses = new util.HashSet[InetSocketAddress]()
+//    addresses.add(new InetSocketAddress("node01", 6379))
+//    addresses.add(new InetSocketAddress("node02", 6379))
+//    val clusterConfig = new FlinkJedisClusterConfig.Builder().setNodes(addresses).build()
+
     result.addSink(new RedisSink[(String, Int)](config, new RedisMapper[(String, Int)] {
       override def getCommandDescription: RedisCommandDescription = {
         new RedisCommandDescription(RedisCommand.HSET, "wc")
