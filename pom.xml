@@ -150,7 +150,12 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.9</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-statebackend-rocksdb_2.11</artifactId>
+            <version>${flink-version}</version>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
