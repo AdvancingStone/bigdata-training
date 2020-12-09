@@ -1,0 +1,14 @@
+{
+  "brand": "name",
+  "client": "materiel",
+  "serialId": "20201204114705575",
+  "updateTime": "20201204114705",
+  "data": {
+    "master": 1,
+    "master.hive": 2,
+    "masterAi": 3,
+    "masterAi.hive": 4,
+    "masterAd": 5,
+    "masterAd.hive": 6
+  }
+}
