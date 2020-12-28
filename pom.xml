@@ -11,7 +11,7 @@
         <hadoop-version>2.7.4</hadoop-version>
         <kafka-version>0.11.0.2</kafka-version>
         <hbase-version>1.4.6</hbase-version>
-        <spark-version>2.4.0</spark-version>
+        <spark-version>2.4.7</spark-version>
     </properties>
 
     <parent>
