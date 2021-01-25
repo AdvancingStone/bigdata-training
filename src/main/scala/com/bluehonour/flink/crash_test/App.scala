@@ -19,7 +19,7 @@ object App {
     val log: org.slf4j.Logger = org.slf4j.LoggerFactory.getLogger(classOf[MyFunction])
     val env = StreamExecutionEnvironment.getExecutionEnvironment
     val props = new Properties()
-    props.put("bootstrap.servers", "ksshuat01732.yumchina.com:9092")
+    props.put("bootstrap.servers", "master:9092")
     props.put("group.id", "crash_test1")
     val checkpointPath = "hdfs:///user/view/crash_test"
 

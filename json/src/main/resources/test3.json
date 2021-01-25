@@ -1,0 +1,117 @@
+{
+  "pipeline": "AAA",
+  "data": {
+    "cardList": {
+      "onSalePrime": [
+        {
+          "primeCardId": "AAA",
+          "primeCardActivityId": "AAA",
+          "primeMemberTypeId": "AAA"
+        }
+      ],
+      "primeInfo": [
+        {
+          "$ref": "$.data.cardList.onSalePrime[0]"
+        }
+      ]
+    },
+    "userInfo": {
+      "phoneNumber": "AAA",
+      "gender": "AAA",
+      "openId": "AAA",
+      "isNew": "AAA",
+      "isPrime": "AAA",
+      "userId": "AAA",
+      "deviceId": "AAA",
+      "userCode": "AAA"
+    },
+    "task": {
+      "global": {
+        "campaign": {
+          "campaignId": "AAA",
+          "ruleId": "AAA"
+        },
+        "version": "AAA"
+      },
+      "ingestTime": "AAA",
+      "commonInfo": "AAA",
+      "taskGroup": "AAA",
+      "accountId": "AAA",
+      "taskType": "AAA",
+      "taskCode": "AAA",
+      "sourceType": "AAA",
+      "startTime": "AAA",
+      "endTime": "AAA",
+      "brandInfo": {
+        "corpCode": "AAA",
+        "brandCode": "AAA"
+      },
+      "postpone": {
+        "enable": "AAA",
+        "postponeTime": "AAA"
+      },
+      "taskId": "AAA",
+      "status": "AAA"
+    },
+    "orderInfo": {
+      "realOrderAmount": "AAA",
+      "cityCode": "AAA",
+      "channel": "AAA",
+      "extraParam": {
+        "POI_type": "AAA",
+        "iRemark": "AAA",
+        "address2": "AAA",
+        "coordinate_x": "AAA",
+        "needInvoice": "AAA",
+        "address1": "AAA",
+        "coordinate_y": "AAA",
+        "deliveryTimeOfMap": "AAA",
+        "iLinkMan": "AAA",
+        "hasChildren": "AAA",
+        "numOfDinners": "AAA",
+        "invoiceTitle": "AAA"
+      },
+      "orderingTime": "AAA",
+      "transactionId": "AAA",
+      "marketName": "AAA",
+      "orderTime": "AAA",
+      "orderAmount": "AAA",
+      "cityName": "AAA",
+      "bookingType": "AAA",
+      "marketCode": "AAA",
+      "promiseTime": "AAA",
+      "payChannel": "AAA",
+      "brand": "AAA",
+      "storeCode": "AAA"
+    },
+    "ai": {
+      "experimentId": "AAA",
+      "bucketId": "AAA",
+      "recommandReason": "AAA",
+      "aiConfigs": "AAA",
+      "scenarioId": "AAA",
+      "uniqueId": "AAA"
+    },
+    "recommends": [
+      {
+        "primeCardId": "AAA",
+        "sizeId": "AAA",
+        "systemId": "AAA",
+        "num": "AAA",
+        "promotionCode": "AAA",
+        "baseId": "AAA",
+        "type": "AAA",
+        "primeCardActivityId": "AAA",
+        "activityId": "AAA",
+        "linkId": "AAA",
+        "round": "AAA",
+        "price": "AAA",
+        "primeMemberTypeId": "AAA",
+        "couponCode": "AAA",
+        "realPrice": "AAA"
+      }
+    ]
+  },
+  "updateTime": "AAA",
+  "version": "AAA"
+}

@@ -1,0 +1,118 @@
+{
+  "code": 200,
+  "msg": "ok",
+  "data": {
+    "userInfo": {
+      "userCode": "1000",
+      "phoneNumber": "123456"
+    },
+    "orderInfo": {
+      "date": "20201221",
+      "time": "12:30",
+      "list": [
+        {
+          "id1": "111",
+          "id2": "111"
+        },
+        {
+          "id1": "222",
+          "id2": "222"
+        }
+      ],
+      "arr": [
+        {
+          "id1": "1000",
+          "id2": "123456"
+        },
+        [
+          {
+            "id2": "222",
+            "id1": "222"
+          },
+          {
+            "id1": "111",
+            "id2": "111"
+          },
+          {
+            "id1": "222",
+            "id2": "222"
+          }
+        ],
+        [
+          {
+            "id1": "333",
+            "id2": "333"
+          }
+        ],
+        []
+      ]
+    },
+    "collectionlist": [
+      {
+        "visit_person_id": "xxxxx",
+        "equipment_id": "xxxxx",
+        "name": "吴xx",
+        "visit_records": [
+          {
+            "visit_id": "216",
+            "visit_person_id": "31",
+            "business_id": "670",
+            "business_name": {},
+            "question_subject": {}
+          },
+          {
+            "visit_id": "111",
+            "visit_person_id": "222",
+            "business_id": "622270",
+            "business_name": {},
+            "question_subject": {}
+          }
+        ]
+      },
+      {
+        "visit_person_id": "xxxxx",
+        "equipment_id": "xxxxx",
+        "name": "吴xx",
+        "visit_records": [
+          {
+            "visit_id": "216",
+            "visit_person_id": "31",
+            "business_id": "670",
+            "business_name": {},
+            "question_subject": {}
+          }
+        ]
+      }
+    ]
+  },
+  "data2": {
+    "userInfo": {
+      "userCode": "1000",
+      "phoneNumber": "123456",
+      "userList": [
+        {
+          "userCode": "1000",
+          "phoneNumber": "123456"
+        },
+        {
+          "userCode": "1000",
+          "phoneNumber": "123456"
+        }
+      ]
+    },
+    "orderInfo": {
+      "date": "20201221",
+      "time": "12:30"
+    }
+  },
+  "data3": {
+    "userInfo": {
+      "userCode": "1000",
+      "phoneNumber": "123456"
+    },
+    "orderInfo": {
+      "date": "20201221",
+      "time": "12:30"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "tagAttrValues": [
+      {
+        "attrId": 520005,
+        "text": "少年"
+      },
+      {
+        "attrId": 520006,
+        "text": "青年"
+      },
+      {
+        "attrId": 520007,
+        "text": "中年"
+      }
+    ],
+    "tagId": 10268003,
+    "tagName": "年龄段"
+  },
+{
+ "tagAttrValues": [
+      {
+        "attrId": 520005,
+        "text": "满1000"
+      },
+      {
+        "attrId": 520006,
+        "text": "满5000"
+      },
+      {
+        "attrId": 520007,
+        "text": "满10000"
+      }
+    ],
+    "tagId": 10268004,
+    "tagName": "消费金额"
+},
+{
+ "tagAttrValues": [
+      {
+        "attrId": 520005,
+        "text": "1-10"
+      },
+      {
+        "attrId": 520006,
+        "text": "10-20"
+      },
+      {
+        "attrId": 520007,
+        "text": "20+"
+      }
+    ],
+    "tagId": 10268005,
+    "tagName": "消费频次"
+}
+]

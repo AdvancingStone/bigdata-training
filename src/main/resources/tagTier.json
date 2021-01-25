@@ -1,0 +1,38 @@
+[
+  {
+    "tagAttrValues": [
+      {
+        "attrId": 520005,
+        "text": "少年"
+      },
+      {
+        "attrId": 520006,
+        "text": "青年"
+      },
+      {
+        "attrId": 520007,
+        "text": "中年"
+      }
+    ],
+    "tagId": 10268003,
+    "tagName": "年龄段"
+  },
+  {
+    "tagAttrValues": [
+      {
+        "attrId": 120005,
+        "text": "少年"
+      },
+      {
+        "attrId": 120006,
+        "text": "青年"
+      },
+      {
+        "attrId": 120007,
+        "text": "中年"
+      }
+    ],
+    "tagId": 10268001,
+    "tagName": "年龄段"
+  }
+]

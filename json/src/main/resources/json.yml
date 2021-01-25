@@ -1,0 +1,12 @@
+json:
+  # json parse strategy: multi_fields or embedded_fields, default strategy is multi_fields
+  strategy: embedded_fields
+  # multiple fields are separated by ","
+  multi_fields: data
+  embedded_fields:
+    - field: data
+      tier: 3
+    - field: data2
+      tier: 2
+    - field: data3
+      tier: 3
