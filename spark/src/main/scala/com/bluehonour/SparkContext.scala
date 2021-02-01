@@ -1,4 +1,4 @@
-package com.bluehonour.transformation
+package com.bluehonour
 
 import org.apache.spark
 import org.apache.spark.sql.SparkSession

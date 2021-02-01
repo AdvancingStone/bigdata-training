@@ -1,5 +1,6 @@
 package com.bluehonour.transformation
 
+import com.bluehonour.SparkContext
 import com.bluehonour.transformation.Cogroup.sc
 
 object GroupWith extends SparkContext with App{

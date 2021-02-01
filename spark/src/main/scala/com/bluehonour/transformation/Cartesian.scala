@@ -1,5 +1,7 @@
 package com.bluehonour.transformation
 
+import com.bluehonour.SparkContext
+
 /**
  * Computes the cartesian product between two RDDs
  * (i.e. Each item of the first RDD is joined with each item of the second RDD) and returns them as a new RDD.

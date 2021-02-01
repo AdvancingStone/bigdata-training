@@ -1,4 +1,6 @@
-package com.bluehonour.transformation
+package com.bluehonour.others
+
+import com.bluehonour.SparkContext
 
 /**
  * Coalesces the associated data into a given number of partitions.

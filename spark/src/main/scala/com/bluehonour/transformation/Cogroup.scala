@@ -1,5 +1,7 @@
 package com.bluehonour.transformation
 
+import com.bluehonour.SparkContext
+
 /**
  * A very powerful set of functions that allow grouping up to 3 key-value RDDs together using their keys.
  */

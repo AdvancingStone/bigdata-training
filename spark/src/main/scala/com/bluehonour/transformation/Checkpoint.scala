@@ -1,6 +1,6 @@
-package com.bluehonour
+package com.bluehonour.transformation
 
-import com.bluehonour.transformation.SparkContext
+import com.bluehonour.SparkContext
 import org.apache.spark.rdd.RDD
 
 /**
@@ -17,5 +17,5 @@ object Checkpoint extends SparkContext with App {
   a.checkpoint()
   val value: Long = a.count()
   println(value)
-  // 5
+   5
 }

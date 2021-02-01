@@ -1,6 +1,6 @@
 package com.bluehonour.action
 
-import com.bluehonour.transformation.SparkContext
+import com.bluehonour.SparkContext
 
 /**
  * Converts the RDD into a Scala array and returns it.

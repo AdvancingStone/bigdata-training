@@ -1,5 +1,6 @@
 package com.bluehonour.transformation
 
+import com.bluehonour.SparkContext
 import org.apache.spark.rdd.RDD
 
 /**
