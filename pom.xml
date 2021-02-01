@@ -7,6 +7,9 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>json</module>
+        <module>spark</module>
+        <module>flink</module>
+        <module>kafka</module>
     </modules>
 
     <properties>
