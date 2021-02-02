@@ -18,7 +18,7 @@ import org.apache.spark.rdd.RDD
  * 可能庞大的输入数据集以GPS坐标的形式存储在许多分区中，seqOp(第一个第二个reducer)可以将GPS坐标转换为地图坐标，
  * 并在地图上的相应位置放上一个标记，combOp(第二个reducer)将以局部地图的形式接收这些亮点，并将它们组合成一个单一的最终输出地图。
  */
-object aggregate extends SparkContext with App {
+object Aggregate extends SparkContext with App {
 
   // lets first print out the contents of the RDD with partition labels
   def myFunc(index: Int, iter: Iterator[(Int)]): Iterator[String] = {
