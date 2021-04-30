@@ -17,7 +17,7 @@ public class Triangle {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[][] arr = new int[n][n];
-        int max_value = factorial(n);
+        int max_value = n*(n+1)/2;
         System.out.println(max_value);
         int x=0;
 
@@ -71,14 +71,6 @@ public class Triangle {
         printTriangle(arr, n);
         return x-1;
 
-    }
-
-    private static int factorial(int n) {
-        if (n == 1) {
-            return n;
-        } else {
-            return n + factorial(n - 1);
-        }
     }
 
     private static void printTriangle(int[][] arr, int n){
