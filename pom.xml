@@ -10,7 +10,7 @@
         <module>spark</module>
         <module>flink</module>
         <module>kafka</module>
-        <module>sort-algorithm</module>
+        <module>hbase</module>
     </modules>
 
     <properties>
