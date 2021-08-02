@@ -1,8 +1,7 @@
 package com.bluehonour.transformations
 
 import org.apache.flink.streaming.api.functions.ProcessFunction
-import org.apache.flink.streaming.api.scala.{OutputTag, StreamExecutionEnvironment}
-import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.scala.{OutputTag, StreamExecutionEnvironment, _}
 import org.apache.flink.util.Collector
 
 object SideOutput {

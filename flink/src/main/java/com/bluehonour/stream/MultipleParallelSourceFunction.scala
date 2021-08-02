@@ -1,8 +1,7 @@
 package com.bluehonour.stream
 
 import org.apache.flink.streaming.api.functions.source.{ParallelSourceFunction, SourceFunction}
-import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
-import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
 
 import scala.util.Random
 

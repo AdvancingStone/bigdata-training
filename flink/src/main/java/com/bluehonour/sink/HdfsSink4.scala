@@ -1,16 +1,13 @@
 package com.bluehonour.sink
 
-import java.io.IOException
-import java.nio.charset.StandardCharsets
-
 import org.apache.flink.core.fs.Path
 import org.apache.flink.core.io.SimpleVersionedSerializer
 import org.apache.flink.streaming.api.functions.sink.filesystem.{BucketAssigner, StreamingFileSink}
-import org.apache.flink.streaming.api.functions.sink.filesystem.bucketassigners.SimpleVersionedStringSerializer
 import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
 import org.apache.parquet.hadoop.metadata.CompressionCodecName
-import scala.beans.BeanProperty
-import scala.collection.immutable.Range.Long
+
+import java.io.IOException
+import java.nio.charset.StandardCharsets
 
 object HdfsSink4 {
   def main(args: Array[String]): Unit = {

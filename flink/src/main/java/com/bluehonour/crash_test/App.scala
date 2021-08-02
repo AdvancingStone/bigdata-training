@@ -1,9 +1,5 @@
 package com.bluehonour.crash_test
 
-import java.lang
-import java.util.Properties
-import java.util.regex.Pattern
-
 import org.apache.flink.api.common.serialization.SimpleStringSchema
 import org.apache.flink.contrib.streaming.state.{OptionsFactory, RocksDBStateBackend}
 import org.apache.flink.runtime.state.StateBackend
@@ -13,6 +9,10 @@ import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
 import org.apache.flink.streaming.connectors.kafka.{FlinkKafkaConsumer, FlinkKafkaProducer, KafkaSerializationSchema}
 import org.apache.kafka.clients.producer.ProducerRecord
 import org.rocksdb.{BlockBasedTableConfig, ColumnFamilyOptions, DBOptions}
+
+import java.lang
+import java.util.Properties
+import java.util.regex.Pattern
 
 object App {
   def main(args: Array[String]): Unit = {

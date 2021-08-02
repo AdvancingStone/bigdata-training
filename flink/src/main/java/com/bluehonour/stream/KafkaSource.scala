@@ -1,13 +1,12 @@
 package com.bluehonour.stream
 
-import java.util.Properties
-
 import org.apache.flink.api.common.typeinfo.TypeInformation
-import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
+import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
 import org.apache.flink.streaming.connectors.kafka.{FlinkKafkaConsumer, KafkaDeserializationSchema}
-import org.codehaus.jackson.map.deser.std.StringDeserializer
-import org.apache.flink.streaming.api.scala._
 import org.apache.kafka.clients.consumer.ConsumerRecord
+import org.codehaus.jackson.map.deser.std.StringDeserializer
+
+import java.util.Properties
 
 object KafkaSource {
   def main(args: Array[String]): Unit = {

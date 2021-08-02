@@ -1,17 +1,16 @@
 package com.bluehonour.sink
 
-import java.sql.{Connection, DriverManager, PreparedStatement}
-import java.util.Properties
-
 import org.apache.flink.api.common.functions.ReduceFunction
 import org.apache.flink.api.common.typeinfo.TypeInformation
 import org.apache.flink.configuration.Configuration
 import org.apache.flink.streaming.api.functions.sink.{RichSinkFunction, SinkFunction}
-import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
-import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
 import org.apache.flink.streaming.connectors.kafka.{FlinkKafkaConsumer, KafkaDeserializationSchema}
 import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.apache.kafka.common.serialization.StringSerializer
+
+import java.sql.{Connection, DriverManager, PreparedStatement}
+import java.util.Properties
 
 /**
  * 幂等性

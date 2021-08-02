@@ -1,17 +1,15 @@
 package com.bluehonour.state
 
-import java.text.SimpleDateFormat
-import java.util.Properties
-
 import org.apache.flink.api.common.functions.RichMapFunction
 import org.apache.flink.api.common.serialization.SimpleStringSchema
 import org.apache.flink.api.common.state.{ListState, ListStateDescriptor}
 import org.apache.flink.configuration.Configuration
-import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
-import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer
 import org.apache.kafka.common.serialization.StringSerializer
 
+import java.text.SimpleDateFormat
+import java.util.Properties
 import scala.collection.JavaConverters._
 
 /**

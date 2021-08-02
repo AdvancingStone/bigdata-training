@@ -1,11 +1,9 @@
 package com.bluehonour.state
 
-import com.bluehonour.state.ValueState.CarInfo
 import org.apache.flink.api.common.functions.{AggregateFunction, RichMapFunction}
 import org.apache.flink.api.common.state.{AggregatingState, AggregatingStateDescriptor}
 import org.apache.flink.configuration.Configuration
-import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
-import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
 
 /**
  * AggregatingState<IN, OUT> :保留一个单值，表示添加到状态的所有值的聚合。

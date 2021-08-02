@@ -1,7 +1,6 @@
 package com.bluehonour.stream
 
-import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
-import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
 
 object CollectionSource {
   def main(args: Array[String]): Unit = {

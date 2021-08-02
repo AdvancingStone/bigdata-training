@@ -1,8 +1,7 @@
 package com.bluehonour.transformations
 
 import org.apache.flink.api.java.functions.KeySelector
-import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
-import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
 
 object KeyBy {
   def main(args: Array[String]): Unit = {

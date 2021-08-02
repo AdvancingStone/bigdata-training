@@ -1,7 +1,6 @@
 package com.bluehonour.stream
 
-import org.apache.flink.api.scala.{DataSet, ExecutionEnvironment}
-import org.apache.flink.api.scala._
+import org.apache.flink.api.scala.{DataSet, ExecutionEnvironment, _}
 
 object HdfsWordCount {
   def main(args: Array[String]): Unit = {

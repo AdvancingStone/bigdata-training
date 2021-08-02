@@ -1,8 +1,6 @@
 package com.bluehonour.transformations
 
-import org.apache.flink.streaming.api.functions.co.CoMapFunction
-import org.apache.flink.streaming.api.scala.{ConnectedStreams, StreamExecutionEnvironment}
-import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.scala.{ConnectedStreams, StreamExecutionEnvironment, _}
 
 object CoMap {
   def main(args: Array[String]): Unit = {

@@ -2,7 +2,6 @@ package com.bluehonour.timer
 
 import org.apache.flink.streaming.api.functions.KeyedProcessFunction
 import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
-import org.apache.flink.streaming.api.scala._
 import org.apache.flink.util.Collector
 
 import scala.collection.mutable

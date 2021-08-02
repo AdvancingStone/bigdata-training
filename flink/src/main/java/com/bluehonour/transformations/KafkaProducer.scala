@@ -1,11 +1,10 @@
 package com.bluehonour.transformations
 
-import java.util.Properties
-
 import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
 import org.apache.kafka.common.serialization.StringSerializer
 
+import java.util.Properties
 import scala.io.Source
 
 object KafkaProducer {

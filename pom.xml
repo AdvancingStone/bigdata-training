@@ -11,6 +11,9 @@
         <module>flink</module>
         <module>kafka</module>
         <module>hbase</module>
+        <module>algorithm</module>
+        <module>redis</module>
+        <module>special-requirements</module>
     </modules>
 
     <properties>

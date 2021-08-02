@@ -1,9 +1,7 @@
 package com.bluehonour.sink
 
-import java.util.Properties
-
 import org.apache.flink.api.common.functions.ReduceFunction
-import org.apache.flink.api.common.serialization.{BulkWriter, SimpleStringEncoder}
+import org.apache.flink.api.common.serialization.SimpleStringEncoder
 import org.apache.flink.api.common.typeinfo.TypeInformation
 import org.apache.flink.core.fs.Path
 import org.apache.flink.streaming.api.functions.sink.filesystem.StreamingFileSink
@@ -12,6 +10,8 @@ import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
 import org.apache.flink.streaming.connectors.kafka.{FlinkKafkaConsumer, KafkaDeserializationSchema}
 import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.apache.kafka.common.serialization.StringSerializer
+
+import java.util.Properties
 
 object FileSink {
   def main(args: Array[String]): Unit = {

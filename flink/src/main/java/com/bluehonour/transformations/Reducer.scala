@@ -1,12 +1,11 @@
 package com.bluehonour.transformations
 
-import java.util.Properties
-
 import org.apache.flink.api.common.serialization.SimpleStringSchema
-import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
-import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer
 import org.apache.kafka.common.serialization.StringDeserializer
+
+import java.util.Properties
 
 object Reducer {
   case class CarFlow(monitor_id:String, car_id:String, event_time:String, speed:Double)

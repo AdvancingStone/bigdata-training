@@ -1,8 +1,7 @@
 package com.bluehonour.transformations
 
 import org.apache.flink.streaming.api.functions.co.CoFlatMapFunction
-import org.apache.flink.streaming.api.scala.{ConnectedStreams, StreamExecutionEnvironment}
-import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
 import org.apache.flink.util.Collector
 
 object CoFlatMap {

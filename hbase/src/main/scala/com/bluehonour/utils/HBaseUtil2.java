@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
  
-public class HBaseUtil {
+public class HBaseUtil2 {
  
     //1.静态代码块获取连接对象
     static Connection connection = null;

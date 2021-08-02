@@ -1,14 +1,13 @@
 package com.bluehonour.crash_test
 
-import java.text.SimpleDateFormat
-import java.util.Date
-
 import org.apache.flink.api.common.state.{ListState, ListStateDescriptor, ValueState, ValueStateDescriptor}
 import org.apache.flink.api.common.typeinfo.TypeInformation
 import org.apache.flink.configuration.Configuration
 import org.apache.flink.streaming.api.functions.KeyedProcessFunction
 import org.apache.flink.util.Collector
 
+import java.text.SimpleDateFormat
+import java.util.Date
 import scala.collection.JavaConverters._
 
 class MyFunction extends KeyedProcessFunction[Long, (Long, String), String ]{

@@ -1,19 +1,17 @@
 package com.bluehonour.sink
 
-import java.lang
-import java.util.Properties
-
-import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
-import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
 import org.apache.flink.streaming.connectors.kafka.{FlinkKafkaProducer, KafkaSerializationSchema}
 import org.apache.kafka.clients.producer.ProducerRecord
-import org.apache.kafka.common.serialization.StringSerializer
+
+import java.lang
+import java.util.Properties
 
 object KafkaSink {
   def main(args: Array[String]): Unit = {
     val env = StreamExecutionEnvironment.getExecutionEnvironment
     val stream = env.socketTextStream("master", 8888)
-    val result = stream.flatMap(_.split("\\s+"))
+    val result: DataStream[(String, Int)] = stream.flatMap(_.split("\\s+"))
       .map((_, 1))
       .keyBy(0)
       .sum(1)

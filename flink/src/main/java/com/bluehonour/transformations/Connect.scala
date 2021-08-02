@@ -4,8 +4,7 @@ import org.apache.flink.api.java.io.TextInputFormat
 import org.apache.flink.core.fs.Path
 import org.apache.flink.streaming.api.functions.co.CoMapFunction
 import org.apache.flink.streaming.api.functions.source.FileProcessingMode
-import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
-import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
 
 import scala.collection.mutable
 

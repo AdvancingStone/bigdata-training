@@ -3,8 +3,7 @@ package com.bluehonour.state
 import org.apache.flink.api.common.functions.RichMapFunction
 import org.apache.flink.api.common.state.{ValueState, ValueStateDescriptor}
 import org.apache.flink.configuration.Configuration
-import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
-import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
 
 /**
  * ValueState:类型为T的单值状态，这个状态与对应的Key绑定，最简单的状态，通过update更新

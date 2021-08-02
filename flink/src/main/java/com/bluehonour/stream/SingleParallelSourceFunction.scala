@@ -1,10 +1,9 @@
 package com.bluehonour.stream
 
-import java.util.{Date, Random}
-
-import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
 import org.apache.flink.streaming.api.functions.source.SourceFunction
-import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
+
+import java.util.Random
 
 object SingleParallelSourceFunction {
   def main(args: Array[String]): Unit = {

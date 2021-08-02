@@ -3,8 +3,7 @@ package com.bluehonour.state
 import org.apache.flink.api.common.functions.RichMapFunction
 import org.apache.flink.api.common.state.{MapState, MapStateDescriptor}
 import org.apache.flink.configuration.Configuration
-import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
-import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
 
 /**
  * MapState<UK, UV>:状态值为一个Map，用户通过put或putAll方法添加元素，get(key)通过指定的

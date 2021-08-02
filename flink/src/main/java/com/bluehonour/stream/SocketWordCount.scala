@@ -1,7 +1,6 @@
 package com.bluehonour.stream
 
-import org.apache.flink.streaming.api.scala.{DataStream, StreamExecutionEnvironment}
-import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.scala.{DataStream, StreamExecutionEnvironment, _}
 
 object SocketWordCount {
   def main(args: Array[String]): Unit = {

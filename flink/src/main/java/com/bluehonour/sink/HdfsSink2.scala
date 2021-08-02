@@ -1,8 +1,5 @@
 package com.bluehonour.sink
 
-import java.nio.charset.{Charset, StandardCharsets}
-
-import org.apache.flink.api.common.functions.ReduceFunction
 import org.apache.flink.api.common.serialization.BulkWriter
 import org.apache.flink.core.fs.{FSDataOutputStream, Path}
 import org.apache.flink.core.io.SimpleVersionedSerializer
@@ -10,6 +7,8 @@ import org.apache.flink.streaming.api.functions.sink.filesystem.bucketassigners.
 import org.apache.flink.streaming.api.functions.sink.filesystem.{BucketAssigner, StreamingFileSink}
 import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
 import org.apache.flink.util.Preconditions
+
+import java.nio.charset.{Charset, StandardCharsets}
 
 object HdfsSink2 {
   def main(args: Array[String]): Unit = {
