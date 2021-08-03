@@ -1,10 +1,10 @@
 package com.bluehonour.state
 
+import com.bluehonour.state.ValueState.CarInfo
 import org.apache.flink.api.common.functions.{ReduceFunction, RichMapFunction}
 import org.apache.flink.api.common.state.{ReducingState, ReducingStateDescriptor}
 import org.apache.flink.configuration.Configuration
 import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
-
 /**
  * ReducingState：每次调用add()方法添加值的时候，会调用用户传入的reduceFunction，最后合并到一个单一的状态值
  * 案例3：使用ReducingState统计每辆车的速度总和

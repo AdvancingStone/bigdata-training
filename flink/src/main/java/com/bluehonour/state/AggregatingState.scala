@@ -1,5 +1,6 @@
 package com.bluehonour.state
 
+import com.bluehonour.state.ValueState.CarInfo
 import org.apache.flink.api.common.functions.{AggregateFunction, RichMapFunction}
 import org.apache.flink.api.common.state.{AggregatingState, AggregatingStateDescriptor}
 import org.apache.flink.configuration.Configuration
