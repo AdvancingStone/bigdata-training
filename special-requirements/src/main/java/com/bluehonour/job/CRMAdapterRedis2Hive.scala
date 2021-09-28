@@ -16,13 +16,13 @@ object CRMAdapterRedis2Hive {
 
   var redisMin: Long = _
   val redisMax: Long = System.currentTimeMillis()
-  val jedisKey = "device:public_track"
+  val jedisKey = "jedisKey"
 
-  val database = "todays-tableau"
-  val table = "redis_index_info"
-  val jdbcUrl = "jdbc:mysql://master:3306/todays-tableau"
+  val database = "database"
+  val table = "table"
+  val jdbcUrl = "jdbc:mysql://master:3306/database"
   val user = "root"
-  val password = "liushuai"
+  val password = ""
 
 
   def main(args: Array[String]): Unit = {
@@ -96,7 +96,7 @@ object CRMAdapterRedis2Hive {
     println("开始连接redis local: master")
     val pool = new JedisPool("master", 6379)
     val jedis: Jedis = pool.getResource
-    jedis.auth("liushuai")
+    jedis.auth("")
     println("redis 连接成功")
     println(s"ping redis: ${jedis.ping()}")
     jedis

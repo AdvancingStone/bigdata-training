@@ -49,9 +49,6 @@ object SparkOnHiveLocalDemo {
     val jedis = pool.getResource
     jedis.auth("liushuai")
 
-    val tuples: util.Set[Tuple] = jedis.zrange(jedisKey, 0, 10)
-    println(tuples)
-
     val count = jedis.zcount(jedisKey, redisMin, redisMax)
     println(s"redis的新数据量为: ${count}")
     var list = List[Location]()

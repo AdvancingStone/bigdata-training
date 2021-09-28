@@ -10,7 +10,7 @@ object GenerateSimulatedData2Redis {
   def main(args: Array[String]): Unit = {
     val pool = new JedisPool("master", 6379)
     val jedis = pool.getResource
-    jedis.auth("liushuai")
+    jedis.auth("")
 
     val random = new Random()
 
