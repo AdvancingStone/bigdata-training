@@ -23,7 +23,7 @@
         <spark.version>2.4.0</spark.version>
         <redis.version>3.0.1</redis.version>
         <hive.version>2.3,9</hive.version>
-        <hadoop.version>2.7.4</hadoop.version>
+        <hadoop.version>2.10.1</hadoop.version>
         <mysql.version>5.1.47</mysql.version>
         <fastjson.version>1.2.62</fastjson.version>
     </properties>
