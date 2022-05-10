@@ -20,7 +20,7 @@
         <scala-version>2.11</scala-version>
         <kafka.version>2.2.1</kafka.version>
         <snakeyaml.version>1.26</snakeyaml.version>
-        <hadoop.version>2.7.4</hadoop.version>
+        <hadoop.version>3.2.3</hadoop.version>
         <spark.version>2.4.3</spark.version>
         <fastjson.version>1.2.62</fastjson.version>
     </properties>
