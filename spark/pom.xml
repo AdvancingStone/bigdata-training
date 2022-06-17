@@ -13,7 +13,7 @@
         <scala.version>2.11.8</scala.version>
         <spark-version>2.2.0</spark-version>
         <redis.version>3.0.1</redis.version>
-        <fastjson.version>1.2.62</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
     </properties>
     <repositories>
         <repository>
